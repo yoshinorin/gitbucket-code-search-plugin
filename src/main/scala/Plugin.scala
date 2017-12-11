@@ -1,5 +1,4 @@
 import io.github.gitbucket.solidbase.model.Version
-import gitbucket.codesearch.controllers.SearchController
 
 class Plugin extends gitbucket.core.plugin.Plugin {
   override val pluginId: String = "codesearch"
@@ -8,6 +7,6 @@ class Plugin extends gitbucket.core.plugin.Plugin {
   override val versions: List[Version] = List(new Version("1.0.0"))
 
   override val controllers = Seq(
-    "/*" -> new SearchController()
+    "/*" -> new CodeSearchController
   )
 }
