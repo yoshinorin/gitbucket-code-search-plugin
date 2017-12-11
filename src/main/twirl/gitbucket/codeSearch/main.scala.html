@@ -1,5 +1,20 @@
-@()(implicit context: gitbucket.core.controller.Context)
+@(repository: gitbucket.core.service.RepositoryService.RepositoryInfo)(body: Html)(implicit context: gitbucket.core.controller.Context)
 @import context._
-@gitbucket.core.html.main("Search") {
-
+@import gitbucket.core.view.helpers._
+@gitbucket.core.html.main("Search", Some(repository)) {
+  @gitbucket.core.html.menu("search", repository) {
+    <div class="main-sidebar">
+      <div class="sidebar">
+        <ul class="nav sidebar-menu">
+          <li>
+            <form id="search" action="@context.path/search" method="GET" class="pc navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" name="query" id="navbar-search-input" class="form-control" placeholder="Search repository"/>
+              </div>
+            </form>
+          </li>
+        </li>
+      </div>
+    </div>
+  }
 }
