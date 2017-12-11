@@ -11,7 +11,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
   override val versions: List[Version] = List(new Version("1.0.0"))
 
   override val repositoryMenus = Seq(
-    (repository: RepositoryInfo, context: Context) => Some(Link("Code search", "Code search", "/search", Some("search")))
+    (repository: RepositoryInfo, context: Context) => Some(Link("Code search", "Code search", "/search?type=code&q=&type=files", Some("search")))
   )
 
   override val controllers = Seq(
