@@ -21,7 +21,7 @@ Goto the `repository` menu, you can see `Code search` section.
 
 |Plugin version|GitBucket version|
 |:-------------:|:-------:|
-|1.0.0|4.19.x - 4.21.x|
+|1.0.0|4.19.x - 4.22.0|
 
 # Build from source
 
