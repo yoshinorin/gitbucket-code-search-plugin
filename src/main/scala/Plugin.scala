@@ -9,7 +9,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
   override val description: String = "Instead of removed default code search."
   override val versions: List[Version] = List(new Version("1.0.0"))
 
-  override val repositoryMenus = Seq(
+  override val repositoryMenus: Seq[(RepositoryInfo, Context) => Some[Link]] = Seq(
     (repository: RepositoryInfo, context: Context) => Some(Link("Code search", "Code search", "/search?type=code&q=&type=files", Some("search")))
   )
 }
