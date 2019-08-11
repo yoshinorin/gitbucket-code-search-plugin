@@ -21,15 +21,16 @@ Goto the `repository` menu, you can see `Code search` section.
 
 |Plugin version|GitBucket version|
 |:-------------:|:-------:|
-|1.0.0|4.19.x - 4.29.0|
+|2.0.0|4.32.0 - 4.32.0|
+|1.0.0|4.19.x - 4.31.x|
 
 # Build from source
 
 ```sh
-sbt package
+sbt assembly
 ```
 
-The built package will be created at `/target/scala-2.12/gitbucket-code-search-plugin_2.12-{plugin-version}.jar`
+The built package will be created at `/target/scala-2.13/gitbucket-code-search-plugin-{plugin-version}.jar`
 
 # License
 
