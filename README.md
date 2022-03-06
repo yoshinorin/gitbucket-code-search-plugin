@@ -10,7 +10,7 @@ This plugin provides link to GitBucket default code(file) search page on reposit
 
 # Download & Installation
 
-1. Download plugin jar file from [the release page](//github.com/YoshinoriN/gitbucket-code-search-plugin/releases).
+1. Download plugin jar file from [the release page](//github.com/yoshinorin/gitbucket-code-search-plugin/releases).
 2. Put plugin jar file into `GITBUCKET_HOME/plugins` and restart GitBucket.
 
 # UI Usage
