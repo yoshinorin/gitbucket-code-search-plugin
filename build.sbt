@@ -1,5 +1,5 @@
 name := "gitbucket-code-search-plugin"
 organization := "net.yoshinorin"
-version := "2.0.0"
+version := "3.0.0"
 scalaVersion := "2.13.8"
 gitbucketVersion := "4.37.2"
